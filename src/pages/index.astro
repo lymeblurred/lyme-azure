@@ -8,7 +8,6 @@ import LinkButton from "@/components/LinkButton.astro";
 import Card from "@/components/Card.astro";
 import Hr from "@/components/Hr.astro";
 import getSortedPosts from "@/utils/getSortedPosts";
-import IconRss from "@/assets/icons/IconRss.svg";
 import IconArrowRight from "@/assets/icons/IconArrowRight.svg";
 import { SITE } from "@/config";
 import { SOCIALS } from "@/constants";
@@ -25,43 +24,35 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
   <main id="main-content" data-layout="index">
     <section id="hero" class="pt-8 pb-6">
       <h1 class="my-4 inline-block text-4xl font-bold sm:my-8 sm:text-5xl">
-        Mingalaba
+        Lyme's Code Lab  
       </h1>
       <a
         target="_blank"
         href="/rss.xml"
-        class="inline-block"
+        class="inline-block text-4xl font-bold sm:my-8 sm:text-5xl"
         aria-label="rss feed"
         title="RSS Feed"
       >
-        <IconRss
-          width={20}
-          height={20}
-          class="scale-125 stroke-accent stroke-3"
-        />
+        🧪 
         <span class="sr-only">RSS Feed</span>
       </a>
 
       <p>
-        AstroPaper is a minimal, responsive, accessible and SEO-friendly Astro
-        blog theme. This theme follows best practices and provides accessibility
-        out of the box. Light and dark mode are supported by default. Moreover,
-        additional color schemes can also be configured.
+        I'm Lyme, a tech enthusiast diving deep into modern C++ and Astro. Here, I share my coding journey, tips, and insights to help you level up your skills too! 🌟
       </p>
       <p class="mt-2">
-        Read the blog posts or check
+        Fun fact: I'm Maple's tech-loving alter ego! Check out
         <LinkButton
           class="underline decoration-dashed underline-offset-4 hover:text-accent"
-          href="https://github.com/satnaing/astro-paper#readme"
+          href="https://www.saroprock.com"
         >
-          README
-        </LinkButton> for more info.
+          Maple's page
+        </LinkButton> to learn more about me.
       </p>
       {
-        // only display if at least one social link is enabled
         SOCIALS.length > 0 && (
           <div class="mt-4 flex flex-col sm:flex-row sm:items-center">
-            <div class="mr-2 mb-1 whitespace-nowrap sm:mb-0">Social Links:</div>
+            <div class="mr-2 mb-1 whitespace-nowrap sm:mb-0">Connect with me:</div>
             <Socials />
           </div>
         )
@@ -74,7 +65,10 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
       featuredPosts.length > 0 && (
         <>
           <section id="featured" class="pt-12 pb-6">
-            <h2 class="text-2xl font-semibold tracking-wide">Featured</h2>
+            <h2 class="text-2xl font-semibold tracking-wide">Featured Posts ✨</h2>
+            <p class="text-gray-600 dark:text-gray-400 mb-4">
+              Check out my top picks—posts I’m especially proud of or think you’ll love! 💖
+            </p>
             <ul>
               {featuredPosts.map(({ data, id }) => (
                 <Card
@@ -93,7 +87,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
     {
       recentPosts.length > 0 && (
         <section id="recent-posts" class="pt-12 pb-6">
-          <h2 class="text-2xl font-semibold tracking-wide">Recent Posts</h2>
+          <h2 class="text-2xl font-semibold tracking-wide">Fresh from the Code Lab 🧪</h2>
           <ul>
             {recentPosts.map(
               ({ data, id }, index) =>
@@ -112,7 +106,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
 
     <div class="my-8 text-center">
       <LinkButton href="/posts/">
-        All Posts
+        Explore All Posts 🚀
         <IconArrowRight class="inline-block" />
       </LinkButton>
     </div>
