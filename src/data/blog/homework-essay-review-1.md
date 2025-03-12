@@ -1,7 +1,8 @@
 ---
 author: Lyme Blurred
-pubDatetime: 2025-03-12T22:49:00
-title: Homework essay review - 1st
+pubDatetime: 2024-03-12T20:58:52.737Z
+modDatetime: 2025-03-13T09:24:07.841Z
+title: Homework essay review
 slug: homework-essay-review-1
 featured: false
 draft: false
