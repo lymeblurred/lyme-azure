@@ -1,15 +1,17 @@
 ---
 author: Lyme Blurred
 pubDatetime: 2025-03-12T22:49:00
-modDatetime: 2025-03-12T22:49:00
-title: Homework essay review | 1st
+title: Homework essay review - 1st
+slug: homework-essay-review-1
 featured: false
 draft: false
 tags:
   - english
   - learning
-description: Just a review of my homework & promote it! & keep learning English
+description: 
+  Just a review of my homework & promote it! & keep learning English
 ---
+
 ## Introduction
 
 Hi! I am Lyme. This page is my first blog, which is used to document my personal review of my English homework. Yep, I created the blog to promote my English skills indeed. I confirm that I will write these words by myself, not AI or translation application. So it may have some grammar issues. If you find it, please tell me :).
